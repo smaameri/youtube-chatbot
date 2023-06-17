@@ -1,9 +1,9 @@
-import os
 import sys
+from dotenv import load_dotenv
 from langchain.document_loaders import YoutubeLoader
 from langchain.indexes import VectorstoreIndexCreator
 
-os.environ["OPENAI_API_KEY"] = "sk-"
+load_dotenv('.env')
 
 video_id = sys.argv[1]
 

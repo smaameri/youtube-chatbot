@@ -1,6 +1,6 @@
-import os
 import argparse
 import shutil
+from dotenv import load_dotenv
 from langchain.document_loaders import YoutubeLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
@@ -8,7 +8,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
 
-os.environ["OPENAI_API_KEY"] = "sk-"
+load_dotenv('.env')
 
 parser = argparse.ArgumentParser(description="Query a Youtube video:")
 parser.add_argument("-v", "--video-id", type=str, help="The video ID from the Youtube video")
