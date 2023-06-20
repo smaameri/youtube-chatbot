@@ -5,7 +5,7 @@ Provided here are a few python scripts to help get started with building your ow
 LangChain to download the YouTube video transcripts, store them in a vector store, and send requests to the OpenAI
 GPT3 LLM so you can ask questions about the video.
 
-A detailed guide to using the scripts is on Medium over here: https://medium.com/@ssmaameri/youtube-chatbot-using-langchain-and-openai-f8faa8f34929 
+A detailed guide to using the scripts is on Medium over [here](https://medium.com/@ssmaameri/youtube-chatbot-using-langchain-and-openai-f8faa8f34929)
 
 There are 2 scripts. A very basic one, to get you up and running fast, and a more complex ones, 
 that sets up a chat window in the terminal, creating a chatbot style interaction.
